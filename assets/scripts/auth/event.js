@@ -2,36 +2,53 @@ const api = require('./api')
 
 const ui = require('./ui')
 
-//const getFormFields =require('')
+const getFormFields =require('../../../lib/get-form-fields')
 
-const onSignUp = function(event){
+const onSignUp = function (event) {
   event.preventDefault()
-console.log('hello there!')
+  console.log('hello there!')
 
-const form = event.target
-const data = getFormFields(form)
-console.log(data)
+  const form = event.target
+  const data = getFormFields(form)
+  console.log('This is data in sign-up', data)
 
-api.signUp(data)
-.then(ui.signUpSuccess)
-.catch(ui.signUpFailure)
+  api.signUp(data)
+    .then(ui.signUpSuccess)
+    .catch(ui.signUpFailure)
 
 }
 
-const onSignIn = function(event){
+const onSignIn = function (event) {
   event.preventDefault()
-console.log('hello there!')
+  console.log('hello Sign in attempt!')
 
-const form = event.target
-const data = getFormFields(form)
-console.log(data)
+  const form = event.target
+  const data = getFormFields(form)
+  console.log('This is data in sign-in!', data)
 
-api.signIn(data)
-.then(ui.signInSuccess)
-.catch(ui.signInFailure)
+  api.signIn(data)
+    .then(ui.signInSuccess)
+    .catch(ui.signInFailure)
 
 }
+
+const onChangePassword = function(event){
+  event.preventDefault()
+  console.log('did it work?')
+
+  const form = event.target
+  const data = getFormFields(form)
+  console.log(data)
+
+  api.changePassword(data)
+    .then(ui.signInSuccess)
+    .catch(ui.signInFailure)
+
+}
+
+
 module.exports = {
 onSignUp,
-onSignIn
+onSignIn,
+onChangePassword
 }
