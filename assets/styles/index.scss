@@ -1,1 +1,42 @@
 @import '~bootstrap/scss/bootstrap';
+.container {
+  background-color:#FFA07A;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+  padding: 5px;
+  margin: 0px auto;
+  width: 454px;
+  height: 454px;
+}
+
+.box {
+  background-color:#FA8072;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px
+}
+
+.loginform{
+  background-color: lightblue;
+  text-align: center;
+  width:500px;
+  height: 500px;
+}
+
+.inputform{
+  width:60%;
+  padding:5px;
+  margin:5px;
+}
+
+.button{
+  align-items: flex-start;
+}
+
+.h1{
+  margin:50px;
+}
