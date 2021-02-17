@@ -41,8 +41,8 @@ const onChangePassword = function(event){
   console.log(data)
 
   api.changePassword(data)
-    .then(ui.signInSuccess)
-    .catch(ui.signInFailure)
+    .then(ui.changePasswordSuccess)
+    .catch(ui.changePasswordFail)
 
 }
 
