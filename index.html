@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Example</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <div class = "loginform">
+        <h1>Tic Tac Toe</h1>
+        <p>Sign Up or Sign In to Play</p>
+          <main>
+            <div id='success-message'></div>
+            <div id='error-message'></div>
+            <section>
+              <form id='sign-up'>
+                <input class="inputform" name="credentials[email]" type="text" placeholder="Enter e-mail" required> <br>
+                <input class="inputform" name="credentials[password]" type="password" placeholder="Enter password" required> <br>
+                <input class="inputform" name="credentials[password_confirmation]" type="password" placeholder="Re-enter password" required><br>
+                <button class="button" type="submit">Sign Up</button>
+              </form>
+              <br>
+
+              <form id='sign-in'>
+                <input class="inputform" name="credentials[email]" type="text" placeholder="Enter e-mail" required> <br>
+                <input class="inputform" name="credentials[password]" type="password" placeholder="Enter password" required> <br>
+                <button class="button" type="submit">Sign In</button>
+              </form>
+              <br>
+        </div>
+              <section>
+                  <form id='change-password'>
+                    <input class="inputform" name="passwords[old]" type="password" placeholder="Enter old Password" required> <br>
+                    <input class="inputform" name="passwords[new]" type="password" placeholder="New Password" required> <br>
+                    <button class="button" type="submit">Change Password</button>
+                  </form>
+              </section>
+
+                <div id="sign-out">
+                  <button>Sign Out </button>
+                </div>
+
+               <div class="buttoncontainer">
+                  <div class="startgamebutton">
+                      <button>Start Game </button>
+                  </div>
+
+                 <div class="showgamesbutton">
+                      <button>Show All Games</button>
+                 </div>
+               </div>
+
+          <div class ="container">
+                <div class="box" data-cell-index="0">0</div>
+                <div class="box" data-cell-index="1">1</div>
+                <div class="box" data-cell-index="2">2</div>
+                <div class="box" data-cell-index="3">3</div>
+                <div class="box" data-cell-index="3">4</div>
+                <div class="box" data-cell-index="3">5</div>
+                <div class="box" data-cell-index="3">6</div>
+                <div class="box" data-cell-index="3">7</div>
+                <div class="box" data-cell-index="3">8</div>
+          </div>
+
+            </div>
+
+        </main>
+    </body>
+</html>
