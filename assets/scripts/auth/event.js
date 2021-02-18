@@ -32,7 +32,7 @@ const onSignIn = function (event) {
 
 }
 
-const onChangePassword = function(event){
+const onChangePassword = function (event) {
   event.preventDefault()
   console.log('did it work?')
 
@@ -43,12 +43,20 @@ const onChangePassword = function(event){
   api.changePassword(data)
     .then(ui.changePasswordSuccess)
     .catch(ui.changePasswordFail)
-
 }
 
+
+const onSignOut = function (event) {
+  event.preventDefault()
+
+  api.signOut()
+    .then(ui.signOutSuccess)
+    .catch(ui.signOutFailure)
+}
 
 module.exports = {
 onSignUp,
 onSignIn,
-onChangePassword
+onChangePassword,
+onSignOut
 }

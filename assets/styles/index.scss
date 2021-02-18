@@ -33,10 +33,29 @@
   margin:5px;
 }
 
-.button{
-  align-items: flex-start;
+.buttoncontainer{
+  display:flex;
+  flex-direction: row;
+  background-color:#FA8072;
+  margin: 10px 495px 10px 495px;
+  justify-content: space-around;
+  padding: 10px 10px 10px 10px;
 }
 
-.h1{
-  margin:50px;
+.startgamebutton{
+  background-color:#FA8072;
+}
+
+.showgamesbutton{
+  background-color:#FA8072;
+}
+
+#change-password{
+  width:40%;
+  padding:5px;
+  margin:0px 0px 0px 20px;
+}
+
+#sign-out{
+  margin:0px 0px 0px 30px ;
 }

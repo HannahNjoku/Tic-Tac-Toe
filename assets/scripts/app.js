@@ -15,4 +15,8 @@ $(() => {
   $("#change-password").on('submit', authEvents.onChangePassword)
   $("#change-password").hide()
   $(".container").hide()
+  $('.showgamesbutton').hide()
+  $('.startgamebutton').hide()
+  $('.buttoncontainer').hide()
+  $('.box').on('click', gameEvents.onGameBoardClick)
 })

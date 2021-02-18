@@ -19,6 +19,14 @@ const signIn = function (data){
   })
 }
 
+const signOut = function (data){
+  return $.ajax({
+    method:'DELETE',
+    url: config.apiUrl + '/sign-out',
+    data: data
+  })
+}
+
 const changePassword = function (data){
   return $.ajax({
     method:'PATCH',
@@ -33,5 +41,6 @@ const changePassword = function (data){
 module.exports = {
   signUp,
   signIn,
-  changePassword
+  changePassword,
+  signOut
 }
